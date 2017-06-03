@@ -13,7 +13,7 @@ Discover hidden files and directories on a web server. The application tries to 
 * Concurrent relative path search
 * Configurable number of fuzzing workers
 * Fuzz CMS ==> Wordpress,Durpal,Joomla
-* Generate a report of the valid paths
+* Generate reports of the valid paths
 ## Usage
 
 ~~~
@@ -36,12 +36,12 @@ Example:
 python angryFuzzer.py -u http://127.0.0.1 
 ~~~
 
-* Fuzzing wordpress CMS
+* Fuzzing CMS (wp: in this exemple !)
 ~~~
 python angryFuzzer.py -u http://127.0.0.1 --cms wp 
 ~~~
 
-* Fuzzing Custom Wordlist
+* Fuzzing a custom Wordlist
 ~~~
 python angryFuzzer.py -u http://127.0.0.1 -w fuzzdb/discovery/predictable-filepaths/php/PHP.txt
 ~~~
