@@ -40,13 +40,13 @@ def banner():
 	print 			 " /  /_\  \ /    \  / ___\_  __ <   |  | |    __)|  |  \___   /\___   /  _(__  <_  __ \""
 	print 			 "/    |    \   |  \/ /_/  >  | \/\___  | |     \ |  |  //    /  /    /  /       \  | \/"
 	print 		 	 "\____|__  /___|  /\___  /|__|   / ____| \___  / |____//_____ \/_____ \/______  /__|   "
-	print c.BLUE+ 	 "        \/     \//_____/        \/          \/              \/      \/       \/       "
+	print c.BLUE+ 	 "        \/     \//_____/        \/          \/              \/      \/       \/       \n"
 	print c.CYAN+    "============>"+__source__
 	print c.BLUE +	 "===========================================> by Sold1er \n"+c.RESET		
 
 def start():
 	banner()
-	pars = optparse.OptionParser()
+	pars = optparse.OptionParser(description="[*] Discover hidden files and directories")
 	pars.add_option('-q', '--quiet',action="store_true", dest="verbose", help="Silent mode ,only repport", default=False)
 	pars.add_option('-u', '--url',action="store", dest="url", type="string", help=" URL of the Target",default=None)
 	pars.add_option('-c', '--cms',action="store", type="string", dest="cms", help="scan CMS ==> wp ,dp",default=None)
@@ -56,7 +56,6 @@ def start():
 
 	if not opts.url :
 		print "usage : python angryFuzzer.py -h"
-
 	if opts.url:
 		o = urlparse(opts.url)
 		if o[0] not in ['http','https', 'www']:
