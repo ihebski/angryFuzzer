@@ -31,7 +31,7 @@ Options:
 ~~~
 
 Example:
-* Fuzzing an url with default dictionnaire
+* Fuzzing an url with default dictionary
 ~~~
 python angryFuzzer.py -u http://127.0.0.1 
 ~~~
