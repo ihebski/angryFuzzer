@@ -1,0 +1,4 @@
+requests
+optparse
+urlparse
+getopt
