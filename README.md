@@ -62,5 +62,9 @@ $ python angryFuzzer.py
 ```bash
 $ sudo pip install -r requirements.txt
 ```
+# Contributors
+I would like to take this opportunity to extend special thanks to Oussama Ben Ghorbel for his contribution and help .He is doing a great job .
+Checkout his Github 
+[](https://github.com/Dainerx)
 ## License
 The MIT License (MIT)
