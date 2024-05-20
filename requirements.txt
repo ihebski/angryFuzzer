@@ -1,4 +1,4 @@
 requests
-optparse
-urlparse
-getopt
+optparse-pretty
+urlparse2
+getopts
